@@ -33,10 +33,14 @@ jobs:
         with:
           root_file: resume.tex
 
+      - name: Prepare for upload
+        run: |
+          mv resume.pdf output/resume.pdf
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: resume.pdf
+          path: output
 
       - name: Deploy to GitHub Pages
         id: deployment
