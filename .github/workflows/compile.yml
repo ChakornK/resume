@@ -35,6 +35,7 @@ jobs:
 
       - name: Prepare for upload
         run: |
+          mkdir -p output
           mv resume.pdf output/resume.pdf
 
       - name: Upload artifact
