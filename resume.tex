@@ -1,0 +1,195 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xparse}
+\input{glyphtounicode}
+
+\usepackage{ulem}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------------------------
+
+\newcommand{\resumeItem}[1]{
+\item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\NewDocumentCommand\resumeSubheading{mmmom}{
+  \vspace{-2pt}
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3\IfNoValueTF{#4}{}{ $|$ #4}} & \textit{\small #5} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[3]{
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.15in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge Chakorn Kungsanarux} \\ \vspace{0.35cm}
+
+  \href{mailto:chakornk2007@gmail.com}{\uline{chakornk2007@gmail.com}}%
+  \kern 0.5 cm%
+  \href{https://www.linkedin.com/in/chakorn-kungsanarux}{\uline{linkedin.com/in/chakorn-kungsanarux}}%
+  \kern 0.5 cm%
+  \href{https://github.com/chakornk}{\uline{github.com/chakornk}}%
+  \kern 0.5 cm%
+  \href{https://chakornk.dev}{\uline{chakornk.dev}}%
+\end{center}
+
+%-------------------------------------------
+
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of British Columbia}{2025 - 2029 (expected)}
+{Bachelor of Science}{Vancouver, BC}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Motion UBC}{Nov. 2025 - Present}
+{Developer}[TypeScript, PHP, Lavarel, React, Tailwind]{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Worked on a pro-bono software project for processing, storing, and managing client information.}
+\resumeItem{Designed and created frontend UI for authentication pages.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Google Developers Student Club UBC}{Sep. 2025 - Present}
+{Product Developer}[TypeScript, Next.js, React, Tailwind, AWS S3, Prisma]{Vancouver, BC}
+\resumeItemListStart
+\resumeItem{Created a web app for tracking and predicting disease outbreaks.}
+\resumeItem{Reduced load time of a web app used in an event with 40+ participants by 75\%.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Learning Buddies Network}{Oct. 2023 - May 2024}{Vancouver, BC}
+{Math Mentor}
+\resumeItemListStart
+\resumeItem{Tutored elementary school students in weekly one-on-one sessions.}
+\resumeItem{Prepared lessons ahead of time to better fit with a student's knowledge of various math topics.}
+\resumeItem{Received the "Outstanding Mentor" award in June 2024.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{Equation Visualizer}{2025}
+{Vue.js, WebGL}
+\resumeItemListStart
+\resumeItem{Created a web app that allows users to enter a mathematical equation and view its heatmap.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{MasterMath}{2025}
+{Next.js, React, Tailwind, MongoDB, Google OAuth}
+\resumeItemListStart
+\resumeItem{Developed a web app for helping high school students practice math in a more engaging way through a reward system.}
+\resumeItem{Implemented JWT to authorize requests.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{Club Manager}{2025}
+{Next.js, React, Tailwind}
+\resumeItemListStart
+\resumeItem{Developed a web app for managing high school clubs that allows users to create, modify, and join clubs digitally.}
+\resumeItem{Designed and implemented REST APIs to integrate frontend and backend.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{JH Eagles}{2024}
+{Flutter, GitHub Actions}
+\resumeItemListStart
+\resumeItem{Built a mobile app based on Material Design 3 that displays school-related information, taking data from the official school app's API.}
+\resumeItem{Used GitHub Actions to automate building app and pushing new updates.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+        \textbf{Languages}{: TypeScript, HTML/CSS, PHP, Dart, Python, GLSL, R} \\
+        \textbf{Frameworks}{: Next.js, React, Vue.js, Express.js, React Native, Electron.js, Flutter} \\
+        \textbf{Libraries}{: Tailwind CSS, PixiJS, Mongoose} \\
+        \textbf{Developer Tools}{: Git, GitHub Actions, Docker, Figma, VS Code} \\
+    }}
+\end{itemize}
+
+\end{document}
