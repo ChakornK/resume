@@ -48,12 +48,12 @@
   }
 }
 
-\NewDocumentCommand\resumeSubheading{mmmom}{
+\NewDocumentCommand\resumeSubheading{mmmmo}{
   \vspace{-2pt}
 \item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
-    \textit{\small#3\IfNoValueTF{#4}{}{ $|$ #4}} & \textit{\small #5} \\
+    \textit{\small#4\IfNoValueTF{#5}{}{ $|$ #5}} & \textit{\small #3} \\
   \end{tabular*}\vspace{-7pt}
 }
 
@@ -116,16 +116,16 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Motion UBC}{Nov. 2025 - Present}
-{Developer}[TypeScript, PHP, Lavarel, React, Tailwind]{Vancouver, BC}
+{Motion UBC}{Nov. 2025 - Present}{Vancouver, BC}
+{Developer}[TypeScript, PHP, Lavarel, React, Tailwind]
 \resumeItemListStart
 \resumeItem{Worked on a pro-bono software project for processing, storing, and managing client information.}
 \resumeItem{Designed and created frontend UI for authentication pages.}
 \resumeItemListEnd
 
 \resumeSubheading
-{Google Developers Student Club UBC}{Sep. 2025 - Present}
-{Product Developer}[TypeScript, Next.js, React, Tailwind, AWS S3, Prisma]{Vancouver, BC}
+{Google Developers Student Club UBC}{Sep. 2025 - Present}{Vancouver, BC}
+{Product Developer}[TypeScript, Next.js, React, Tailwind, AWS S3, Prisma]
 \resumeItemListStart
 \resumeItem{Created a web app for tracking and predicting disease outbreaks.}
 \resumeItem{Reduced load time of a web app used in an event with 40+ participants by 75\%.}
